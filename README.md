@@ -1,5 +1,5 @@
-# Android Hardware Back Button when using Prism DialogService
-Android Hardware Back Button when using Prism DialogService closes the App if the Page underneath is the RootPage of a NavigationPage (on a TabbedPage)
+# Android Hardware Back Button when using Prism DialogService to show a Dialog
+Android Hardware Back Button when using Prism DialogService closes the App if the Page underneath the Dialog is the RootPage of a NavigationPage (on a TabbedPage)
 
 The app contains two Tabs for the TabbedPage.
 - The first tab automatically navigates to a second page, opening the Dialog from this page and closing it with the android back button works fine.
