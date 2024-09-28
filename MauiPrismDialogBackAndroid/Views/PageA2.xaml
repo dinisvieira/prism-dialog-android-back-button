@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiPrismDialogBackAndroid.Views.Page1"
-             Title="Page1">
-    <VerticalStackLayout>
+             xmlns:xaml="http://prismlibrary.com"
+             xaml:DynamicTab.Title="Tab A"
+             x:Class="MauiPrismDialogBackAndroid.Views.PageA2"
+             Title="PageA2">
+    <VerticalStackLayout Margin="20">
         <Label 
-            Text="Page 1"
+            Margin="0,50,0,50"
+            FontSize="20"
+            Text="Tab A (2nd Page)"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-        <Button Text="Navigate to Page 2" Command="{Binding NavigatePage2Command}" />
         <Button Text="Show Dialog" Command="{Binding ShowDialogCommand}" />
     </VerticalStackLayout>
 </ContentPage>

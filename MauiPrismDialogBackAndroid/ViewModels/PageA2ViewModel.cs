@@ -2,12 +2,12 @@
 
 namespace MauiPrismDialogBackAndroid.ViewModels;
 
-public class Page2ViewModel : BindableBase
+public class PageA2ViewModel : BindableBase
 {
     private readonly INavigationService _navigationService;
     private readonly IDialogService _dialogService;
 
-    public Page2ViewModel(INavigationService navigationService, IDialogService dialogService)
+    public PageA2ViewModel(INavigationService navigationService, IDialogService dialogService)
     {
         _navigationService = navigationService;
         _dialogService = dialogService;

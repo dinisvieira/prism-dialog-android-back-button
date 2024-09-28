@@ -1,8 +1,8 @@
 namespace MauiPrismDialogBackAndroid.Views;
 
-public partial class Page2 : ContentPage
+public partial class PageA2 : ContentPage
 {
-	public Page2()
+	public PageA2()
 	{
 		InitializeComponent();
 	}

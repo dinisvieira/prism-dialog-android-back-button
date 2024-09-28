@@ -15,8 +15,9 @@ namespace MauiPrismDialogBackAndroid
                 .UsePrism(prism =>
                     prism.RegisterTypes(containerRegistry =>
                         {
-                            containerRegistry.RegisterForNavigation<Page1, Page1ViewModel>();
-                            containerRegistry.RegisterForNavigation<Page2, Page2ViewModel>();
+                            containerRegistry.RegisterForNavigation<PageA1, PageA1ViewModel>();
+                            containerRegistry.RegisterForNavigation<PageA2, PageA2ViewModel>();
+                            containerRegistry.RegisterForNavigation<PageB1, PageB1ViewModel>();
                             containerRegistry.RegisterDialog<DialogView, DialogViewModel>();
                         })
                         .AddGlobalNavigationObserver(context => context.Subscribe(x =>
@@ -36,11 +37,11 @@ namespace MauiPrismDialogBackAndroid
                             .AddTabbedSegment(page =>
                                 page.CreateTab(t =>
                                         t.AddNavigationPage()
-                                            .AddSegment("Page1"))
+                                            .AddSegment("PageA1")
+                                            .AddSegment("PageA2"))
                                     .CreateTab(t =>
                                         t.AddNavigationPage()
-                                            .AddSegment("Page1")
-                                            .AddSegment("Page2")))
+                                            .AddSegment("PageB1")))
                             .NavigateAsync()))
                 .ConfigureFonts(fonts =>
                 {
